@@ -49,11 +49,18 @@ h1{
     font-weight: bolder;
 }
 
-  p{
+  .Arsenal p{
       font-size: 40px;
       color: #fff;
       font-weight: bold;
   }
+
+.Manchester p{
+      font-size: 40px;
+      color: #fff;
+      font-weight: bold;
+  }
+
 h2{
     color: #fff;
     font-weight: bold;
