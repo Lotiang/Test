@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body {
+    background-color: aqua;
+}
+h1{
+    background-color:white;
+    padding: 2%;
+}
+
+.Manchester{
+    display: flex;
+    flex-direction: column;
+     }
+
+  .Arsenal{
+    display : flex;
+    flex-direction: column;
+}
+
+
+  .Manchester{
+    border-radius: 50%;
+    width: 250px;
+    margin-left: 10%;
+    
+  }
+  .Arsenal{
+    border-radius: 50%;
+    width: 350px;
+    margin-right: 10%;
+
+  }
+  .divider {
+    border-left: 6px  white solid;
+    padding-bottom: 45%;
+  }
+
+  .Arsenal button{
+      padding: 3.5%;
+      font-weight: bolder;
+  }
+  .Manchester button{
+    padding: 5%;
+    font-weight: bolder;
+}
+
+  p{
+      font-size: 40px;
+      color: #fff;
+      font-weight: bold;
+  }
+h2{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.reset{
+    margin-left: 40%;
+    padding: 5%;
+    font-weight: bolder;
+}
+
