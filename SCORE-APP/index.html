@@ -16,10 +16,10 @@
    <div class="Manchester">
        <img src="Man U.png" id="Manu">
        <h2>Mancherster United</h2>
-       <p>0</p>
-       <button type="button">GOAL</button>
-       <P>0</P>
-       <button type="button">FOUL</button>
+       <p id="goal1">0</p>
+       <button onclick="GoalM()">GOAL</button>
+       <P id="foul1">0</P>
+       <button onclick="FoulM()">FOUL</button>
    </div>
    <div class="divider">
 
@@ -27,15 +27,15 @@
    <div class="Arsenal">
        <img src="Arsenal.png" id="Arsen">
        <h2>Arsenal The Gunners</h2><br><br>
-       <p>0</p>
-       <button type="button">GOAL</button>
-       <P>0</P>
-       <button type="button">FOUL</button>
+       <p id="goal2">0</p>
+       <button onclick="GoalA()">GOAL</button>
+       <P id="foul2">0</P>
+       <button onclick="FoulA()">FOUL</button>
    </div>
 </div>
-<div class="reset">
-    <button type="button">RESET</button>
+<div class="reset" id="reset3">
+    <button onclick="Reset()">RESET</button>
 </div>
-<script src="yess.js"></script>
+<script src="./yess.js"></script>
 </body>
 </html>
