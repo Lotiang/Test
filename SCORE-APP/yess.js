@@ -43,4 +43,18 @@ function Reset(){
     
 }
 
+var img = document.getElementById("winner1");
+
+function photoSwitch(){
+
+    // begin your CSS animation by applying class
+    img.setAttribute("winner", "some-animation");
+
+    // have javascript wait 5s before switching the image source
+    setTimeout(function(){
+        img.src = "winner.gif";
+    },5000);
+}
+
+photoSwitch();
  
