@@ -33,7 +33,14 @@ function FoulA(){
 function Reset(){
     var reset3=document.getElementById("reset3")
     NewScore=reset3.innerHTML
+    // var goal1 = document.getElementById("goal1").innerHTML
+    // var foul1 = document.getElementById("foul1").innerHTML
     NewScore=0;
-    document.getElementById("goal1",  "goal2").innerHTML=NewScore
+    document.getElementById("goal1").innerHTML=NewScore
+    document.getElementById("foul1").innerHTML=NewScore
+    document.getElementById("goal2").innerHTML=NewScore
+    document.getElementById("foul2").innerHTML=NewScore
+    
 }
 
+ 
