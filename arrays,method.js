@@ -76,7 +76,7 @@ let name = ['Lotiang', 'Nyathio']
 console.log(name.join(''));
 
 let sisters = ['Totoo', 'Bebi']
-let brothers = ['Ayuub', 'Clemo', 'Abat']
+let brothers = ['Ayuub', 'Clemo', 'Abat', 'Ababa'];
 let family = [sisters.concat(brothers)]
 console.log(family);
 
@@ -361,6 +361,13 @@ function getSum(total, num) {
   return total + Math.round(num);
 }
 
-
+// topics to read in Arrays
+// map(array)
+// filter(array)
+// promises(array)
+// spread operator(array)
+// Await(array)
+// sort(array)
+// foreach(array) the same as Map(array) but it does not creat a new array.
 
 

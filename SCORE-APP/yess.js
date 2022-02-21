@@ -57,4 +57,3 @@ function photoSwitch(){
 }
 
 photoSwitch();
- 
