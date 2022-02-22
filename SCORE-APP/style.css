@@ -8,17 +8,15 @@ body {
     background-image: url(https://th.bing.com/th/id/R.67fa3c4da198a8daa9be4b222c944715?rik=Hls5uHMnmD1Pgw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fDark-Navy-Blue-Background.jpg&ehk=6y5rBHRWi%2fXBK%2fdiYuxeChMJ18GePJvPUPexWRW%2fF50%3d&risl=&pid=ImgRaw&r=0);
 }
 
-.winner{
-margin-left:50%;
+.winner1{
+margin-left:0%;
 width: 0%;
 animation: winner 5s linear infinite;
 }
 
-@keyframes winner {
-  to{
-    transform: rotate(360deg);
-    background:linear;
-  }
+@keyframes winner1 {
+  from {left: 0px;}
+  to {left: 200px;}
 }
 
 h1{
