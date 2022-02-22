@@ -43,17 +43,19 @@ function Reset(){
     
 }
 
-var img = document.getElementById("winner1");
+// var img = document.getElementById("winner1");
 
-function photoSwitch(){
+// function photoSwitch(){
 
-    // begin your CSS animation by applying class
-    img.setAttribute("winner", "some-animation");
+//     // begin your CSS animation by applying class
+//     img.setAttribute("class", "some-animation");
 
-    // have javascript wait 5s before switching the image source
-    setTimeout(function(){
-        img.src = "winner.gif";
-    },5000);
-}
+//     // have javascript wait 5s before switching the image source
+//     setTimeout(function(){
+//         img.src = "winner.gif";
+//     },500);
+// }
 
-photoSwitch();
+// photoSwitch
+    
+

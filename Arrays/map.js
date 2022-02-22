@@ -10,8 +10,6 @@ const newArr1 = names.map((name) =>{
 })
 console.log(newArr1);
 
-const food = [
-    {name:'chicken', price:450},
-    {name:'orange', price:200},
-    {name:'green', price:150},
-]
+let cars = ['Toyota', 'Land Rovers', 'Tesla', 'Nissan'];
+let availableCar = cars.map(obj =>obj);
+console.log(availableCar);

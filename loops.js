@@ -18,7 +18,7 @@ for(let i = 0; i<=arrayName.length -1; i++){
     
 }
 
-for(let i =arrayName.length -1; i>=0 i--){
+for(let i =arrayName.length -1; i>=0; i--){
 
 }
 
