@@ -82,3 +82,13 @@ for([index,animal] of animals.entries()) {
     console.log(animals(i));
     }
  
+    // const hero = {
+    //     alis:'Robbin',
+    //     name: 'Batman', 
+    //     catchphrase: 'We will fight',
+    //     message: function(){
+    //         return `${this.alis} and, ${this.name}, ${this.catchprase}`
+    //     },
+    // }
+    // console.log(hero.message);
+

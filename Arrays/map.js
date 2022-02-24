@@ -13,3 +13,4 @@ console.log(newArr1);
 let cars = ['Toyota', 'Land Rovers', 'Tesla', 'Nissan'];
 let availableCar = cars.map(obj =>obj);
 console.log(availableCar);
+
