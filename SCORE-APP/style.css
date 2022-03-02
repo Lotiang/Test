@@ -5,10 +5,10 @@
 }
 
 body {
-    background-image: url(https://th.bing.com/th/id/R.67fa3c4da198a8daa9be4b222c944715?rik=Hls5uHMnmD1Pgw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fDark-Navy-Blue-Background.jpg&ehk=6y5rBHRWi%2fXBK%2fdiYuxeChMJ18GePJvPUPexWRW%2fF50%3d&risl=&pid=ImgRaw&r=0);
+    background-image: url(https://media4.giphy.com/media/xULW8CPwOHXPua8NTa/giphy.gif?cid=790b76116390d341e18567efd68421976b5a58450d5a3473&rid=giphy.gif&ct=g);
 }
 
-.winner1{
+/* .winner1{
 margin-left:0%;
 width: 0%;
 animation: winner 5s linear infinite;
@@ -17,6 +17,19 @@ animation: winner 5s linear infinite;
 @keyframes winner1 {
   from {left: 0px;}
   to {left: 200px;}
+} */
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+}
+#animate {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  
 }
 
 h1{
