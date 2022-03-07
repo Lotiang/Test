@@ -365,9 +365,162 @@ function getSum(total, num) {
 // map(array)
 // filter(array)
 // promises(array)
-// spread operator(array)
-// Await(array)
-// sort(array)
-// foreach(array) the same as Map(array) but it does not creat a new array.
+// Promise Object Properties
+// A JavaScript Promise object can be:
 
+// Pending
+// Fulfilled
+// Rejected
+// The Promise object supports two properties: state and result.
+
+// While a Promise object is "pending" (working), the result is undefined.
+
+// When a Promise object is "fulfilled", the result is a value.
+
+// When a Promise object is "rejected", the result is an error object.
+
+// myPromise.state	myPromise.result
+// "pending"	undefined
+// "fulfilled"	a result value
+// "rejected"	an error object
+// Here is how to use a Promise:
+
+// myPromise.then(
+//   function(value) { /* code if successful */ },
+//   function(error) { /* code if some error */ }
+// );
+// Promise.then() takes two arguments, a callback for success and another for failure.
+
+// Both are optional, so you can add a callback for success or failure only.
+
+// Example
+// function myDisplayer(some) {
+//   document.getElementById("demo").innerHTML = some;
+// }
+
+// let myPromise = new Promise(function(myResolve, myReject) {
+//   let x = 0;
+
+// // The producing code (this may take some time)
+
+//   if (x == 0) {
+//     myResolve("OK");
+//   } else {
+//     myReject("Error");
+//   }
+// });
+
+// myPromise.then(
+//   function(value) {myDisplayer(value);},
+//   function(error) {myDisplayer(error);}
+// );
+
+
+// spread operator(array)
+// Spread Operator
+// The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+
+// Example
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+
+document.write(numbersCombined);
+results = 1,2,3,4,5,6
+
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021, 
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+//Check the result object in the console:
+console.log(myUpdatedVehicle);
+
+
+// Await(array)
+{/* <h2>JavaScript async / await</h2>
+
+<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+<h1 id="demo"></h1>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+    setTimeout(function() {resolve("I love You !!");}, 3000);
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+</script> */}
+// results = Wait 3 seconds (3000 milliseconds) for this page to change.
+
+// I love You !!
+
+
+// sort(array)
+// Sorting an Array
+// The sort() method sorts an array alphabetically:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+
+result = Apple,Banana,Mango,Orange
+
+// Reversing an Array
+// The reverse() method reverses the elements in an array.
+
+// You can use it to sort an array in descending order:
+
+// Example
+// Create and display an array:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+// First sort the array
+fruits.sort();
+
+// Then reverse it:
+fruits.reverse();
+
+document.getElementById("demo2").innerHTML = fruits;
+
+// results = By combining sort() and reverse() you can sort an array in descending order:
+
+// Banana,Orange,Apple,Mango
+
+// Orange,Mango,Banana,Apple
+
+
+// foreach(array) the same as Map(array) but it does not creat a new array.
+// Definition and Usage
+// The forEach() method calls a function for each element in an array.
+
+// The forEach() method is not executed for empty elements
+// example
+let text = "";
+const fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
+
+document.getElementById("demo").innerHTML = text;
+ 
+function myFunction(item, index) {
+  text += index + ": " + item + "<br>"; 
+}
+// result =
+//  0: apple
+//  1: orange
+//  2: cherry
 
