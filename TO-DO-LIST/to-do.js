@@ -1,3 +1,10 @@
+// let text;
+// if (window.matchMedia("(max-width: 700px)").matches) {
+//   // text = "The screen is less or equal to, 700 pixels wide.";
+// } else {
+//   // text = "The screen is at least 700 pixels wide.";
+// }
+// document.getElementById("demo").innerHTML = text;
 
 
 // Create a "close" button and append it to each list item
