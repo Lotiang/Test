@@ -19,4 +19,4 @@ let num = (num1, num2, num3) =>{
     let ans = num1 * num2 * num3
     return ans
 }
-console.log(num(2, 3, 4));
+console.log(num(1, 2, 3));

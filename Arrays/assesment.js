@@ -6,9 +6,9 @@
 const obj1 = { a: 'z', b: 2, c: 3 };
 const obj2 = { a: 'x', b: 'y', c: 1 };
 let temp;
-temp = obj1
-obj1 = obj2
-obj2 = temp
+temp = obj1[a: 'z', b: 2, c: 3];
+obj1[a: 'z', b: 2, c: 3] = obj2[a: 'x', b: 'y', c:];
+obj2[a: 'x', b: 'y', c:] = temp
 console.log(obj1)
 console.log(obj2)
 // -- swap values (write this code) --

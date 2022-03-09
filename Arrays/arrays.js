@@ -33,7 +33,7 @@ console.log(names[2])
 // fullname
 console.log(names[0]+''+names[1]+''+names[2])
 
-let num = 2
+let num1 = 2
 console.log(num++);
 var num2 = num++
 console.log(num2++);

@@ -366,8 +366,9 @@ function getSum(total, num) {
 // filter(array)
 // promises(array)
 // Promise Object Properties
-// A JavaScript Promise object can be:
 
+
+// A JavaScript Promise object can be:
 // Pending
 // Fulfilled
 // Rejected

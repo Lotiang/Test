@@ -1,30 +1,30 @@
-The switch statement is used to perform different actions based on different conditions.
+// The switch statement is used to perform different actions based on different conditions.
 
-syntax:
-switch(expression) {
-    case x:
-      // code block
-      break;
-    case y:
-      // code block
-      break;
-    default:
-      // code block
-  }
+// syntax:
+// switch(expression) {
+//     case x:
+//       // code block
+//       break;
+//     case y:
+//       // code block
+//       break;
+//     default:
+//       // code block
+//   }
 
-  This is how it works:
+//   This is how it works:
 
-The switch expression is evaluated once.
-The value of the expression is compared with the values of each case.
-If there is a match, the associated block of code is executed.
-If there is no match, the default code block is executed.
+// The switch expression is evaluated once.
+// The value of the expression is compared with the values of each case.
+// If there is a match, the associated block of code is executed.
+// If there is no match, the default code block is executed.
 
-example
-The getDay() method returns the weekday as a number between 0 and 6.
+// example
+// The getDay() method returns the weekday as a number between 0 and 6.
 
-(Sunday=0, Monday=1, Tuesday=2 ..)
+// (Sunday=0, Monday=1, Tuesday=2 ..)
 
-This example uses the weekday number to calculate the weekday name:
+// This example uses the weekday number to calculate the weekday name:
 
 switch (new Date().getDay()) {
   case 0:
@@ -48,6 +48,7 @@ switch (new Date().getDay()) {
   case 6:
     day = "Saturday";
 }
-The result of day will be:
+console.log(day);
+// The result of day will be:
 
-Tuesday
+// Tuesday

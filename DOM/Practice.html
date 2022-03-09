@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body class="bg-dark text-center text-dark">
+    <h2>practicing html dom</h2>
+
+    <div class="jumbotron">
+        <button onclick="goRed()" class="btn btn-danger text-center btn-red">Go red</button>
+    </div>
+    <div class="jumbotron">
+        <button onclick="goWhite()" class=" btn-white text-center btn-white">Go white</button>
+    </div>
+    <div class="jumbotron">
+        <button  class="btn-primary text-center btn-blue">Go blue</button>
+    </div>
+
+    <div class="jumbotron">
+        <button  class="btn-primary text-center btns">Go blue</button>
+        <button  class="btn-white text-center btns">Go white</button>
+        <button  class="btn-danger text-center btns">Go red</button>
+    </div>
+
+    <style>
+        body { margin:40px};
+        .btn-red, .btn-white, .btn-blue {
+            font-size:35px;
+        }
+    </style>
+    <script>
+// grab the elements(1)
+const redbtn = document.querySelector('.btn-red')
+const whitebtn = document.querySelector('.btn-white')
+const bluebtn = document.querySelector('.btn-blue')
+const buttons = document.querySelectorAll('.btns')
+// create function (3)
+function goRed(){
+document.body.style.backgroundColor = '#ff0000'
+}
+
+function goBlue(){
+document.body.style.backgroundColor = '#0000ff'
+}
+
+
+function goWhite(){
+document.body.style.backgroundColor = '#ffffff'
+}
+
+function goYellow(){
+    console.log('😊😊😊😊😊')
+    document.body.style.backgroundColor = '#fff000'
+}
+
+// add event listener(2)
+bluebtn.addEventListener('mouseover',goBlue)
+bluebtn.addEventListener('mouseout',goWhite)
+
+buttons.forEach(button=>button.addEventListener('click',goYellow))
+
+ </script>
+</body>
+</html>
