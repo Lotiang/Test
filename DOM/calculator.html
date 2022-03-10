@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+   h3{
+       text-align: center;
+   }  
+  body {padding: 30px}
+</style>
+<body>
+    <h3 class="">VANILLAS CALCULATOR</h3>
+    <div class="jumbotron container">
+       <div class="form-group">
+           <lebel  for="exampleFormControlInput1">Price</lebel>
+           <input type="text" class="form-control price" placeholder="enter amount">
+
+       </div>
+
+       <div class="form-group">
+        <lebel for="exampleFormControlInput1">Quantity</lebel>
+        <input type="number" class="form-control quantity" placeholder="enter quantity">
+
+    </div>
+<div class="total">
+    <p align="right">$0</p>
+</div>
+  <script>
+    //   grab the elements(1)
+const price = document.querySelector('.price');
+const quantity = document.querySelector('.quantity');
+const total = document.querySelector('.total')
+
+    // create th function (2)
+    function calculatePrice() {
+       const myPrice = price.value
+       console.log(myPrice);
+       const myQuantity = quantity.value
+       console.log(myQuantity);
+       const totalPrice = myPrice * myQuantity
+       console.log(totalPrice);
+       total.innerText = totalPrice
+    }
+
+    // add event listeners (3)
+    price.addEventListener('input', calculatePrice)
+    quantity.addEventListener('input', calculatePrice)
+    
+  </script>
+  
+</body>
+</html>
