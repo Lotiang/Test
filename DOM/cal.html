@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+  body
+   {
+       padding: 30px;
+       }
+
+       
+.calculator
+{
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: black;
+    color: black;
+    box-shadow: 10px 10px 30px #aaa;
+    position:relative;
+    justify-content: space-between;
+}
+
+.calculator .key
+{
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.calculator .lochero
+{
+    padding: 10px;
+}
+
+.calculator .lochero 
+{
+    text-align:center;
+    cursor:pointer;
+    display:inline-block;
+    width:33%;
+    padding: 10px;
+}
+
+.calculator .lochero
+{
+    width:100%;
+}
+
+.calculator .lochero
+{
+    background: black;
+    color:blue;
+    margin: 100px;
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.calculator .operators
+{
+    display:flex;
+}
+
+ .calculator .operators{
+    display:inline-block;
+    font-weight: bolder;
+    padding:5%;
+    cursor:pointer;
+    flex: 1 1 0;
+    background:dodgerblue;
+    color:blue;
+    font-size: x-large;
+
+}
+
+.screen
+{
+    padding:10px;
+    background:black;
+    color:white;
+    text-align:right;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.screen.buffer
+{
+    position:absolute;
+    top:0px;
+    right:10px;
+    font-size:11px;
+}
+
+.screen.total
+{
+    font-size: 22px;
+    padding:20px;
+}
+
+</style>
+<body>
+    <div class="calculator">
+        <div class="screen buffer" id="screen">0</div>	<div class="screen total" id="screentotal">0</div>
+        <div class="operators" id="operators">
+            <tr>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="cl" onclick="solve(cl)"/> </td>
+        </tr>
+        </div>
+        <div class="lochero" id="lochero">
+            <!-- creating buttons and assigning values-->
+<table>
+<td><input type="button" value="1" onclick="dis('1')"/> </td>
+<td><input type="button" value="2" onclick="dis('2')"/> </td>
+<td><input type="button" value="3" onclick="dis('3')"/> </td>
+</tr>
+<tr>
+<td><input type="button" value="4" onclick="dis('4')"/> </td>
+<td><input type="button" value="5" onclick="dis('5')"/> </td>
+<td><input type="button" value="6" onclick="dis('6')"/> </td>
+</tr>
+<tr>
+
+<td><input type="button" value="7" onclick="dis('7')"/> </td>
+<td><input type="button" value="8" onclick="dis('8')"/> </td>
+<td><input type="button" value="9" onclick="dis('9')"/> </td>
+</tr>
+<tr>
+
+<td><input type="button" value="0" onclick="dis('0')"/> </td>
+<!-- Evaluating function call eval()-->
+</tr>
+</table>
+    
+        </div>
+    </div>
+  <script>
+    // grab the elements(1)
+    var operators = ['+', '-', 'x', '/', '=', 'cl'];
+var buffer = '';
+var currentResult = 0;
+var currentOperation = '';
+
+// create the function(2)
+function createKeys()
+{
+    // create the number pad
+	for(let i = 0; i < 10; i++)
+	{
+		let key = document.createElement('div');
+		key.innerHTML = i;
+		key.dataset.value = i;
+		key.className = 'key';
+
+		document.getElementById('numpad').appendChild(key);
+	}
+	// create the row of operators
+	operators.forEach(function(item){
+		let key = document.createElement('div');
+		key.innerHTML = item;
+		key.dataset.operation = item;
+		key.className = 'key';
+
+		document.getElementById('operators').appendChild(key);
+	});
+}
+function createKeys()
+{
+	for(let i = 0; i < 10; i++)
+	{
+		let key = document.createElement('div');
+		key.innerHTML = i;
+		key.dataset.value = i;
+		key.addEventListener('click', function(e){
+			// build up entered number
+			buffer += this.dataset.value;
+		});
+
+		document.getElementById('numpad').appendChild(key);
+	}
+
+    operators.forEach(function(item){
+	let key = document.createElement('div');
+        key.className = 'key';
+	key.innerHTML = item;
+        key.dataset.operation = item;
+        key.addEventListener('click', function(e){
+        if (this.dataset.operation == 'cl')
+        {
+            buffer = '';
+            currentResult = 0;
+            currentOperation = '';
+            document.getElementById('screen').innerHTML = '0';
+            document.getElementById('screentotal').innerHTML = '0';
+        }
+        else
+        {
+            calculate();
+            currentOperation = this.dataset.operation;
+            buffer = '';
+            document.getElementById('screen').innerHTML= '0';
+        }
+    });
+    document.getElementById('operators').appendChild(key);
+});
+function calculate()
+{
+    switch(currentOperation) {
+        case "+":
+            currentResult += parseInt(buffer);
+            break;
+
+        case "-":
+            currentResult -= parseInt(buffer);
+            break;
+
+        case "/":
+            currentResult /= parseInt(buffer);
+            break;
+
+        case "x":
+            currentResult *= parseInt(buffer);
+            break;
+
+        case "=":
+            break;
+        default:
+            currentResult = parseInt(buffer);
+        }
+
+        document.getElementById('screentotal').innerHTML = currentResult;
+}
+// add event listeners   (3)
+window.addEventListener('load', createKeys);
+  </script>
+  
+</body>
+</html>
