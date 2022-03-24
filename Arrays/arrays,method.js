@@ -525,3 +525,94 @@ function myFunction(item, index) {
 //  1: orange
 //  2: cherry
 
+
+// adding  a module in es6
+// 11:10
+// <script type="module" src="filename.js"></script>
+// 11:11
+// A script that uses this module type can now use the import and export features you
+// 11:15
+// How to export a function and use it  on another file  i n javascript
+// 11:15
+// export const add = (x, y) => {
+//   return x + y;
+// }
+// 11:15
+// or
+// 11:15
+// const add = (x, y) => {
+//   return x + y;
+// }
+
+// export { add };
+// 11:19
+// Multiple exports of functions or variables
+// 11:19
+// export { add, subtract };
+
+// ALAMIN  11:27 AM
+// An Immediately-invoked Function Expression (IIFE for friends) is a way to execute functions immediately, as soon as they are created  (() => {})()
+// 11:27
+// (() => {})()
+// 11:28
+// import allows you to choose which parts of a file or module to load.
+// 11:29
+// import { functionName } from ' ./file.js'
+// 11:30
+// import { functionName } from ' ./file.js'
+// 11:31
+// import { add } from './math_functions.js';
+// 11:33
+// here you will only be able to access add function and will ignore the rest of the function. One will not be able to access the rest functions
+// 11:35
+// How can you import multiple functions?
+// 11:35
+// import { add, subtract } from './math_functions.js';
+// 11:38
+// Lets say you want to export everything from a file......... you will use *
+// 11:39
+// import * as myMathModule from "./math_functions.js";
+// 11:40
+// import * as objectName from "./file.js"
+// 11:41
+// to access the functions or the variable or anything from that file you imported, all you have to do is objectName.whateverYouWANT 
+// 11:42
+// The above import statement will create an object called myMathModule. This is just a variable name, you can name it anything. The object will contain all of the exports from math_functions.js in it, so you can access the functions like you would any other object property. Here's how you can use the add and subtract functions that were imported:
+// New
+
+// ALAMIN  12:05 PM
+// There are two types of exports:
+
+// Named Exports (Zero or more exports per module)
+// Default Exports (One per module)
+// 12:07
+// If a module defines a default export:
+
+// // foo.js
+// export default function() { console.log("hello!") }
+// then you can import that default export by omitting the curly braces:
+
+// import foo from "foo";
+// foo(); // hello!
+// 12:08
+// export default. Usually you will use this syntax if only one value is being exported from a file. It is also used to create a fallback value for a file or module.
+// 12:11
+// fallback cvalue for a moduleexample 
+// 12:11
+// export default function subtract(x, y) {
+//   return x - y;
+// }
+// 12:11
+// how to import a default value 
+// 12:12
+// import add from "./math_functions.js";
+// 12:13
+// The syntax differs in one key place. The imported value, add, is not surrounded by curly braces ({}). add here is simply a variable name for whatever the default export of the math_functions.js file is. You can use any name here when importing a default.
+
+
+
+
+
+
+
+

@@ -2,39 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: lightblue;
+    padding: 30px;
 }
 
-body {
-    background-image: url(https://media4.giphy.com/media/xULW8CPwOHXPua8NTa/giphy.gif?cid=790b76116390d341e18567efd68421976b5a58450d5a3473&rid=giphy.gif&ct=g);
-}
-
-/* .winner1{
-margin-left:0%;
-width: 0%;
-animation: winner 5s linear infinite;
-}
-
-@keyframes winner1 {
-  from {left: 0px;}
-  to {left: 200px;}
-} */
-
-#container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  
-}
-#animate {
-  width: 75%;
-  height: 75%;
-  position: absolute;
-  
-}
 
 h1{
     background-color:white;
-    padding: 2%;
 }
 
 .Manchester{

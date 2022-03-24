@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 30px
+        }
+        .invalid { border-color: red; }
+#error {
+     color: red;
+     padding: 2px;
+     margin-top: 50px;
+     }
+    </style>
+    <div class="cointainer-form">
+        
+            <fieldset name="userFields">
+                <legend>info</legend>
+                <input name="login" type="text">
+            </fieldset>
+        </form>
+    </div>
+    
+<div id="error">
+    Your email please: <input type="email" class="invalid">
+</div>
+    
+
+<script>
+input.onblur = function() {
+if (!input.value.includes('@')) { // not email
+input.classList.add('invalid');
+error.innerHTML = 'Please enter a correct email.'
+}
+}
+input.onfocus = function() {
+if (this.classList.contains('invalid')) {
+// remove the "error" indication, because the user wants to re-enter something
+this.classList.remove('invalid');
+error.innerHTML = "";
+
+};
+</script>
+ </body>
+  </html>

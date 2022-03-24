@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div {
+    display: table;
+  }
+  div.t{
+    display: table-cell;
+    width: 100%;
+  }
+  div.t > input {
+    width: 100%;
+    height: 50px;
+  }
+  #submit {
+    height:60px;
+    background-color:blue;
+    color:white;
+    font-style: bold;
+  }
+</style>
+
+<body>
+  <div>
+    <div class="t">
+      <!-- This is the wrapper div around the text input -->
+      <input type="text" id="input" />
+    </div>
+    <button id="submit">Save</button>
+  </div>
+  <ul id="info"></ul>
+  <script>
+    let listElement = document.getElementById("info")
+    let input = document.getElementById("input");
+    // func to create a a new text 
+    function newText(data) {
+      let listItem = document.createElement("li");
+      let newData = document.createTextNode(data);
+      listItem.appendChild(newData);
+      document.getElementById("info").appendChild(listItem);
+    }
+
+    // a func to add eventListner to the button list
+    let button = document.getElementById("submit");
+    button.addEventListener("click", function() {
+      newText(input.value);
+      input.value = ""
+
+    })
+  </script>
+</body>
+
+</html>
