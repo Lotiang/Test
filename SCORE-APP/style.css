@@ -1,97 +1,93 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: lightblue;
-    padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightblue;
+  padding: 30px;
 }
 
-
-h1{
-    background-color:white;
+.container h1 {
+  background-color: white;
 }
 
-.Manchester{
-    display: flex;
-    flex-direction: column;
-     }
-
-  .Arsenal{
-    display : flex;
-    flex-direction: column;
+.container .Manchester {
+  display: flex;
+  flex-direction: column;
 }
 
-
-  .Manchester{
-    border-radius: 50%;
-    width: 250px;
-    margin-left: 10%;
-    
-  }
-  .Arsenal{
-    border-radius: 50%;
-    width: 350px;
-    margin-right: 10%;
-
-  }
-  .divider {
-    border-left: 6px  white solid;
-    padding-bottom: 45%;
-  }
-
-  .Arsenal button{
-      padding: 3.5%;
-      font-weight: bolder;
-      margin: 15%;
-      margin-bottom: 15%;
-  }
-  .Manchester button{
-    padding: 5%;
-    font-weight: bolder;
-    margin-bottom: 5%;
+.container .Arsenal {
+  display: flex;
+  flex-direction: column;
 }
 
-.Arsenal p{
+.container .Manchester {
+  border-radius: 50%;
+  width: 250px;
+  margin-left: 10%;
+}
+.container .Arsenal {
+  border-radius: 50%;
+  width: 350px;
+  margin-right: 10%;
+}
+.container .divider {
+  border-left: 6px white solid;
+  padding-bottom: 45%;
+}
+
+.Arsenal button {
+  padding: 3.5%;
+  font-weight: bolder;
+  margin: 15%;
+  margin-bottom: 15%;
+}
+.Manchester button {
+  padding: 5%;
+  font-weight: bolder;
+  margin-bottom: 5%;
+}
+
+.Arsenal p {
   font-size: 40px;
   color: #fff;
   font-weight: bold;
   margin: 5%;
   margin-left: 20%;
 }
-.Manchester p{
-font-size: 40px;
-color: #fff;
-font-weight:bold;
-margin-bottom: 30%;
-margin-left: 20%;
+.Manchester p {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30%;
+  margin-left: 20%;
 }
 
-
-h2{
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.container h2 {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.reset{
-    margin-left: 40%;
-    padding: 5%;
-    font-weight: bolder;
+ #reset3 { 
+  margin-top:2%;
+  padding: -5%;
+  font-weight: bolder;
+  margin-left: 45%;
+  font-size:40px;
 }
 
 p4{
-  background-color:white;
-  display: inline-flex;
-  height: 70px;
-  width: 200px
-  
+  background-color:black;
+  color:gold;
+  font-size: 40px;
 }
 
-#countdown{
-  font-size: 50px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  font-weight: bold;
-}
 
+ 
+#reset3 button {
+  background-color:red;
+  color:white;
+  padding:1%;
+  font-weight:bolder;
+}

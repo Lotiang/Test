@@ -219,7 +219,7 @@ console.log(newArr);
 
 // The every() method does not change the original array
 
-{/* <h1>JavaScript Arrays</h1>
+/* <h1>JavaScript Arrays</h1>
 <h2>The every() Method</h2>
 
 <p>every() returns true if all elements in an array pass a test (provided as a function).</p>
@@ -350,7 +350,7 @@ function getSum(total, num) {
   return total + Math.round(num);
 } */}
 // Compute the sum of the rounded numbers in an array.
-
+  
 // 24
 
 // example of code
@@ -577,7 +577,10 @@ function myFunction(item, index) {
 // 11:41
 // to access the functions or the variable or anything from that file you imported, all you have to do is objectName.whateverYouWANT 
 // 11:42
-// The above import statement will create an object called myMathModule. This is just a variable name, you can name it anything. The object will contain all of the exports from math_functions.js in it, so you can access the functions like you would any other object property. Here's how you can use the add and subtract functions that were imported:
+// The above import statement will create an object called myMathModule. This is just a variable name, you can name it anything.
+//  The object will contain all of the exports from math_functions.js in it,
+//  so you can access the functions like you would any other object property.
+//  Here's how you can use the add and subtract functions that were imported:
 // New
 
 // ALAMIN  12:05 PM
@@ -595,7 +598,8 @@ function myFunction(item, index) {
 // import foo from "foo";
 // foo(); // hello!
 // 12:08
-// export default. Usually you will use this syntax if only one value is being exported from a file. It is also used to create a fallback value for a file or module.
+// export default. Usually you will use this syntax if only one value is being exported from a file.
+//  It is also used to create a fallback value for a file or module.
 // 12:11
 // fallback cvalue for a moduleexample 
 // 12:11
@@ -607,7 +611,9 @@ function myFunction(item, index) {
 // 12:12
 // import add from "./math_functions.js";
 // 12:13
-// The syntax differs in one key place. The imported value, add, is not surrounded by curly braces ({}). add here is simply a variable name for whatever the default export of the math_functions.js file is. You can use any name here when importing a default.
+// The syntax differs in one key place. The imported value, add, is not surrounded by curly braces ({}).
+//  add here is simply a variable name for whatever the default export of the math_functions.js file is. 
+// You can use any name here when importing a default.
 
 
 

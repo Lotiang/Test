@@ -1,156 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-<style>
-    h3  {
-        text-align: center;
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    h3 {
+      text-align: center;
     }
 
     h6 {
-        text-align: center;
+      text-align: center;
     }
 
     body {
-        padding: 30px
+      padding: 30px;
     }
 
     body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    * {
+      box-sizing: border-box;
+    }
 
+    .container {
+      padding: 16px;
+      background-color: white;
+    }
 
-.container {
-  padding: 16px;
-  background-color: white;
-}
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
 
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color: #04aa6d;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
+    .registerbtn:hover {
+      opacity: 1;
+    }
 
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+  </style>
 
-.registerbtn:hover {
-  opacity: 1;
-}
-
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
-</style>
-
-<body>
-
+  <body>
     <h3 class="header">REGISTRATION FORM</h3>
 
     <h6>Please fill in this form to create an account.</h6>
-    <hr>
+    <hr />
     <div class="jumbotron container">
-        <div class="form-group">
-            <lebel for="exampleFormControlInput1">firstName</lebel>
-            <input type="text" class="form-control name1" placeholder="enter fName">
-        </div>
-
-
-        <div class="form-group">
-            <lebel for="exampleFormControlInput1">secondName</lebel>
-            <input onclick="name2()" type="text" class="form-control name2" placeholder="enter sName">
-        </div>
-
-        <div class="form-group">
-            <lebel for="exampleFormControlInput1">Password</lebel>
-            <input onclick="password()" type="number" class="form-control password" placeholder="new password">
-        </div>
-
-        <div class="form-group">
-            <lebel for="exampleFormControlInput1">Re-enter Password</lebel>
-            <input onclick="password()" type="number" class="form-control password" placeholder="confirm password">
-        </div>
-
-
-        <div class="form-group">
-            <lebel for="exampleFormControlInput1">Email</lebel>
-            <input onclick="email()" type="text" class="form-control email" placeholder="enter email">
-        </div>
-
-        <div class="container signin">
-            <p>By Creating an account you agree to our <a href="#">Terms and Policy</a>.</p>
-          </div>
-
-        <div class="oliver">
-            <button onclick="goRegister()" class="btn btn-danger text-center goRegister">Register</button>
-        </div>
-
-        <p>username: <span class="usernameText"></span></p>
-        <p>password: <span class="passwordText"></span></p>
-        <p>email: <span class="emailText"></span></p>
-     
-      
-      
-     
-      
-        
-
-    </div>
-
-
-    <div class="container signin">
-        <p>Already have an account? <a href="#">Sign in</a>.</p>
+      <div class="form-group">
+        <lebel for="exampleFormControlInput1">firstName</lebel>
+        <input
+          type="text"
+          class="form-control name1"
+          placeholder="enter fName"
+        />
       </div>
 
+      <div class="form-group">
+        <lebel for="exampleFormControlInput1">secondName</lebel>
+        <input
+          onclick="name2()"
+          type="text"
+          class="form-control name2"
+          placeholder="enter sName"
+        />
+      </div>
+
+      <div class="form-group">
+        <lebel for="exampleFormControlInput1">Password</lebel>
+        <input
+          onclick="password()"
+          type="number"
+          class="form-control password"
+          placeholder="new password"
+        />
+      </div>
+
+      <div class="form-group">
+        <lebel for="exampleFormControlInput1">Re-enter Password</lebel>
+        <input
+          onclick="password()"
+          type="number"
+          class="form-control password2"
+          placeholder="confirm password"
+        />
+      </div>
+
+      <div class="form-group">
+        <lebel for="exampleFormControlInput1">Email</lebel>
+        <input
+          onclick="email()"
+          type="text"
+          class="form-control email"
+          placeholder="enter email"
+        />
+      </div>
+
+      <div class="container signin">
+        <p>
+          By Creating an account you agree to our
+          <a href="#">Terms and Policy</a>.
+        </p>
+      </div>
+
+      <div class="oliver">
+        <button
+          onclick="goRegister()"
+          class="btn btn-danger text-center goRegister1"
+        >
+          Register
+        </button>
+      </div>
+
+      <p>fName: <span class="usernameText"></span></p>
+      <p>sName: <span class="usernameText1"></span></p>
+      <p>password: <span class="passwordText"></span></p>
+      <p>cPassword: <span class="passwordText1"></span></p>
+      <p>email: <span class="emailText"></span></p>
+    </div>
+
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+
     <script>
-        //Grab elements elements(1)
-        const fName = document.querySelector('.name1')
-        const sName = document.querySelector('.name2')
-        const password = document.querySelector('.password')
-        const email = document.querySelector('.email')
+      //Grab elements elements(1)
+      const fName = document.querySelector(".name1");
+      const sName = document.querySelector(".name2");
+      const password = document.querySelector(".password");
+      const password2 = document.querySelector(".password2");
+      const email = document.querySelector(".email");
+      let button = document.querySelector(".goRegister1");
 
+      const usernameText = document.querySelector(".usernameText");
+      const usernameText1 = document.querySelector(".usernameText1");
+      const passwordText = document.querySelector(".passwordText");
+      const passwordText1 = document.querySelector(".passwordText1");
+      const emailText = document.querySelector(".emailText");
 
-        const usernameText = document.querySelector('.usernameText')
-        const passwordText = document.querySelector('.passwordText')
-        const emailText = document.querySelector('.emailText')
+      // create function     (2)
+      function create() {
+        usernameText.innerText = fName.value;
+        passwordText.innerText = password.value;
+        passwordText1.innerText = password2.value;
+        emailText.innerText = email.value;
+        usernameText1.innerText = sName.value;
+      }
+      function goRegister() {
+        let button = document.querySelector(".goRegister1");
+        newText = goRegister1.innerHTML;
+        newText = "";
 
-        // create function     (2) 
-        function create(){
-            usernameText.innerText = fName.value
-            passwordText.innerText = password.value
-            emailText.innerText = email.value
+        document.querySelector(".name1").innerHTML = newText;
+        document.querySelector(".name2").innerHTML = newText;
+        document.querySelector(".password").innerHTML = newText;
+        document.querySelector(".password2").innerHTML = newText;
+        document.querySelector(".email").innerHTML = newText;
+      }
 
-        }
-
-
-        //add event listeners   (3) 
-        fName.addEventListener('input', create)
-        password.addEventListener('input', create)
-        email.addEventListener('input', create)
+      //add event listeners   (3)
+      fName.addEventListener("input", create);
+      password.addEventListener("input", create);
+      password2.addEventListener("input", create);
+      email.addEventListener("input", create);
+      sName.addEventListener("input", create);
+      registerbtn.addEventListener("input", create);
     </script>
-</body>
-
+  </body>
 </html>
