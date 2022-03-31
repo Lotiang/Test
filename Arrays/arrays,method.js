@@ -368,7 +368,7 @@ function getSum(total, num) {
 // Promise Object Properties
 
 
-// A JavaScript Promise object can be:
+// A JavaScript Promise is a synchronous task that has two arguments, a callback for success and another for failure but optional:
 // Pending
 // Fulfilled
 // Rejected

@@ -4,7 +4,7 @@
 // The search pattern can be used for text search and text replace operations.
 
 // What Is a Regular Expression?
-// A regular expression is a sequence of characters that forms a search pattern.
+// A regular exp ression is a sequence of characters that forms a search pattern.
 
 // When you search for data in a text, you can use this search pattern to describe what you are searching for.
 

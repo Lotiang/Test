@@ -11,7 +11,7 @@ let prices = [450, 200, 150, 100, 50];
 let totalPrice = prices.forEach((prev,next)=>{
 return prices -20
 })
-console.log(totalPrice -20);
+console.log(totalPrice );
 
 const food1 = [
     {name:'chicken', price:450},
