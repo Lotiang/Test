@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+      color: #ffffff;
+      background-color: #ff00ff;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="getText">click me </button>
+  <li id="output"></li>
+
+  <script>
+    document.getElementById("getText").addEventListener("click", getText)
+
+
+    function getText() {
+      // fetch('sample.txt')
+      // .then(function (response) {
+      //   // console.log(response.text())
+      //   return response.text();
+      // })
+      // .then(function (data) {
+      //   console.log(data)
+      // })
+      fetch('https://content.guardianapis.com/search?q=debates&api-key=test')
+        .then((response) => response.json())
+        // .then((data) => console.log(data))
+
+        //lets say you want to insert the data  into a web page
+        .then((data) => {
+          //  document.getElementById('output').innerText = data 
+          for(let d in data) {
+            for(let md in d) {
+              console.log(md[7])
+            }
+          }
+          // data.forEach((jsonData) => {
+          //   console.log(jsonData)
+          //   // document.getElementById('output').innerText = jsonData.firstName 
+
+
+          // })
+          })
+
+        //adding error messages
+        .catch((error) => console.log(error))
+
+    }
+
+  </script>
+
+</body>
+
+</html>
